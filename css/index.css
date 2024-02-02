@@ -1,0 +1,32 @@
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  table{
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+  tr:nth-child(even){
+    background-color: #dddddd;
+  }
+  td,th{
+    border:1px solid;
+    text-align: left;
+  }
