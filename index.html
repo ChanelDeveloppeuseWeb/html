@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body style="background-color: aqua;">
     <h1 style="color: blue;">My First Heading</h1>
 
     <p>My first paragraph.</p>
@@ -96,5 +96,97 @@
     <dt>milk</dt>
     <dd> -white cold drink</dd>
 </dl>
+
+<iframe src="images/4.png" style="width:200;height:300"></iframe>
+<p>Save the document by pressing <kbd>ctrl+s</kbd></p>
+<p><samp>Files not found.<br>press F1 to continue</samp></p>
+
+<p>the registered trade mark sign: &reg;</p>
+<p>the registered trade mark sign: 	&copy;</p>
+<p>the registered trade mark sign: &euro;</p>
+<p>the registered trade mark sign: &yen;</p>
+<p>the registered trade mark sign: 	&pound;</p>
+<p>the registered trade mark sign: &cent;</p>
+<p>the registered trade mark sign: &apos;</p>
+<p>the registered trade mark sign: &quot;</p>
+<p>the registered trade mark sign: &amp;</p>
+<p>the registered trade mark sign: &amp;</p>
+<p>the registered trade mark sign: &gt;</p>
+<p>the registered trade mark sign: &lt;</p>
+<p>the registered trade mark sign: &nbsp;</p>
+<p>I will display &#128513;</p>
+<p>I will display &#x1F601;</p>
+
+<!-- https://www.w3schools.com/html/default.asp
+https:type de service internet(c est la valeur par defaut de https)
+www : definir un prefixe de domaine
+w3schools.com: nom de domaine
+html:definir un chemin d acces sur le serveur
+default.asp:definir le fichier d acces -->
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+</form>
+
+<input type="button"><br>
+<input type="checkbox"><br>
+<input type="color"><br>
+<input type="date"><br>
+<input type="datetime-local"><br>
+<input type="email"><br>
+<input type="file"><br>
+<input type="hidden"><br>
+<input type="image"><br>
+<input type="month"><br>
+<input type="number"><br>
+<input type="password"><br>
+<input type="radio"><br>
+<input type="range"><br>
+<input type="reset"><br>
+<input type="search"><br>
+<input type="submit"><br>
+<input type="tel"><br>
+<input type="text"><br>
+<input type="time"><br>
+<input type="url"><br>
+<input type="week"><br>
+  
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+  </form>
+<video width="320" height="240" autoplay=1 mute=1 loop=1 controls=0>
+    <source src="video/Git et GitHub (7).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<embed width="100%" height="500px" src="index.html">
+<object width="100%" height="500px" data="index.html"></object>
+
+
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+    <img id="drag1" src="images/4.png" draggable="true" ondragstart="drag(event)" width="336" height="69">
+    
 </body>
 </html>
